@@ -1,4 +1,4 @@
-public class Character {
+public abstract class Character {
     //int power, int hp, void kick(Character c), boolean isAlive()
     protected int hp = 10; //needs to be protected?
     protected int power = 10;
@@ -8,11 +8,9 @@ public class Character {
         this.power = power;
     }
 
-    public void kick(Character c){
-        kick(c); //?
-    }
+    public abstract void kick(Character c);
 
     public boolean isAlive() {
-        return hp > 10;
+        return hp > 0;
     }
 }
