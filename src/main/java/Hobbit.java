@@ -1,9 +1,13 @@
 public class Hobbit extends Character {
     //power = 0, hp = 3, kick(toCry()l)
-    public Hobbit(int hp, int power) {
-        super(hp, power);
+    public Hobbit(){
+        super(3, 0);
     }
-    public void kick(){
-
+    @Override
+    public void kick(Character c) {
+        toCry();
+    }
+    private void toCry(){
+        System.out.println("Cry cry cry");
     }
 }

@@ -1,6 +1,7 @@
-public class Knight extends Character {
+public class Knight extends Swordsman {
     //power 2-12, hp 2-21, kick(like King)
-    public Knight(int hp, int power) {
-        super(hp, power);
+    public Knight(){
+        hp = randNum(2, 21);
+        power = randNum(2, 12);
     }
 }
