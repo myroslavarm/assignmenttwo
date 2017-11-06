@@ -1,6 +1,6 @@
 public class Hobbit extends Character {
     //power = 0, hp = 3, kick(toCry()l)
-    public Hobbit(){
+    Hobbit(){
         super(3, 0);
     }
     @Override

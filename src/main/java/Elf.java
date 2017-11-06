@@ -1,5 +1,5 @@
 public class Elf extends Character {
-    public Elf() {
+    Elf() {
         super(10, 10);
     }
 
@@ -12,5 +12,7 @@ public class Elf extends Character {
             c.power--;
         }
     }
+
+
     //Elf: power = 10, hp= 10, kick(kill everobody which weaker than him, otherwise decrease power of the other character by 1)
 }
