@@ -2,7 +2,8 @@ public class GameManager {
     public GameManager(){
 
     }
-    public void fight(Character c1, Character c2){
+
+    public static void fight(Character c1, Character c2){
         // to provide a fight between two characters
         // and explain via command line what happens during the fight
         // while both of the characters are alive.
@@ -34,5 +35,11 @@ public class GameManager {
                 System.out.println(c2.getClass().getSimpleName() + " is killed!");
             }
         }
+    }
+
+    public static void main(String args[]){
+        //GameManager g = new GameManager();
+        CharacterFactory ch = new CharacterFactory();
+        fight(ch.createCharacter(), ch.createCharacter());
     }
 }

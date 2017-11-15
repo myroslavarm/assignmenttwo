@@ -4,4 +4,9 @@ class Knight extends Swordsman {
         hp = randNum(2, 21);
         power = randNum(2, 12);
     }
+
+    @Override
+    public void kick(Character c) {
+        super.kick(c);
+    }
 }
